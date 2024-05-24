@@ -1,0 +1,540 @@
+/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+
+.container-global{
+  padding-bottom: 100px;
+
+
+  h1 {
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+  }
+
+  h3{
+    display: flex;
+    justify-content: center;
+  }
+
+  .article-1{
+    display: flex;
+    flex-direction: column;
+    background-color: darksalmon;
+    margin: 30px;
+    border-radius: 9px;
+
+    .container-article-1{
+      div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      display: flex;
+
+      p{
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .tfc{
+      height: 300px;
+      width: 500px;
+      margin: 20px;
+    }
+  }
+
+  .article-2{
+    display: flex;
+    flex-direction: column;
+    background-color: darksalmon;
+    margin: 30px;
+    border-radius: 9px;
+
+    .container-article-2{
+      div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      display: flex;
+
+      p{
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .stadeToulousain{
+      height: 300px;
+      width: 500px;
+      margin: 20px;
+    }
+  }
+  .article-3{
+    display: flex;
+    flex-direction: column;
+    background-color: darksalmon;
+    margin: 30px;
+    border-radius: 9px;
+
+    .container-article-2{
+      div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      display: flex;
+
+      p{
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .stadeToulousain{
+      height: 300px;
+      width: 500px;
+      margin: 20px;
+    }
+  }
+  .article-4{
+    display: flex;
+    flex-direction: column;
+    background-color: darksalmon;
+    margin: 30px;
+    border-radius: 9px;
+
+    .container-article-2{
+      div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      display: flex;
+
+      p{
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .stadeToulousain{
+      height: 300px;
+      width: 500px;
+      margin: 20px;
+    }
+  }
+  .article-5{
+    display: flex;
+    flex-direction: column;
+    background-color: darksalmon;
+    margin: 30px;
+    border-radius: 9px;
+
+    .container-article-2{
+      div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      display: flex;
+
+      p{
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .stadeToulousain{
+      height: 300px;
+      width: 500px;
+      margin: 20px;
+    }
+  }
+
+}
+
+img{
+  width: 120px;
+  height: 50px;
+}
+
+.navbar-expand-lg .navbar-collapse{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #555555;
+  color: white;
+  text-align: center;
+
+  p{
+    color:#FFFFFF;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .container-contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+    background-color: #393737;
+
+    a{
+      color: ghostwhite;
+    }
+
+    hr{
+      display: flex;
+      width: 10px;
+      color: white;
+      : 8px;
+    }
+
+    .contact{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+
+      .infos-contact{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .container-copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #555555;
+  }
+}
+.navbar{
+  --bs-navbar-padding-y: 0rem !important;
+}
+
+table{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-form{
+  display: flex;
+  justify-content: center;
+}
+.center-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+}
+h1 {
+  text-align: center;
+}
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+button{
+  display: flex;
+  justify-content: center;
+}
