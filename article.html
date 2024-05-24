@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Article sur le Toulouse fc et sont effectif">
+  <meta name="description" content="Article sur le Toulouse fc et son effectif">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sport report</title>
   <link rel="stylesheet" href="css/style.css">
@@ -23,7 +23,6 @@
 </head>
 <body>
 <header>
-
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
@@ -50,9 +49,9 @@
     </div>
   </nav>
 </header>
-
-<div class="container-global">
-  <h1>Le Toulouse Football Club : Une Équipe en Évolution</h1>
+<main>
+<article class="container-global">
+  <h1 id="article-title">Le Toulouse Football Club : Une Équipe en Évolution</h1>
   <p>Le Toulouse Football Club, souvent abrégé en TFC, est un club de football français basé à Toulouse. Fondé en 1970, le club évolue actuellement en Ligue 2, après avoir été relégué de la Ligue 1 à la fin de la saison 2019-2020.</p>
   <p>Malgré ses hauts et ses bas, le TFC reste un club historique du football français, ayant connu des moments de gloire notamment dans les années 2000 sous la direction de l'entraîneur Alain Casanova.</p>
   <table>
@@ -95,26 +94,31 @@
   </table>
   <p>Aujourd'hui, le TFC s'efforce de reconstruire son équipe et de regagner sa place dans l'élite du football français. Avec un mélange de jeunes talents prometteurs et d'éléments expérimentés, le club toulousain vise à retrouver son lustre d'antan.</p>
   <p>La passion des supporters pour le Toulouse Football Club reste intacte, et l'équipe peut compter sur un soutien fervent à chaque match, que ce soit à domicile au Stadium de Toulouse ou à l'extérieur.</p>
-
-  <h2>Commentaires</h2>
-
+</article>
+<aside id="comments" class="comments" aria-labelledby="comments-title">
+  <h2 class="h2" id="comments-title">Commentaires</h2>
   <div class="comment">
-    <span class="commenter">Jean Dupont :</span>
-    <p class="comment-text">Le TFC est un club historique avec une grande tradition. Espérons qu'ils reviennent bientôt en Ligue 1 !</p>
+    <p>
+      <strong>Marie Dupont :</strong> Très intéressant, merci pour le partage !
+      <time datetime="2024-05-16T14:23:50">14H23</time>
+    </p>
+    <p>
+      <strong>Jean Martin :</strong> Je ne suis pas tout à fait d'accord, mais bonne analyse.
+      <time datetime="2024-05-16T11:41:11">11H41</time>
+    </p>
+    <p>
+      <strong>Sophie Bernard :</strong> C'est exactement ce que je cherchais, super article.
+      <time datetime="2024-05-16T23:45:34">23H45</time>
+    </p>
+    <p>
+      <strong>Lucas Durand :</strong> Assez détaillé et bien expliqué, bravo !
+      <time datetime="2024-05-16T21:11:29">21H11</time>
+    </p>
   </div>
+</aside>
+</main>
 
-  <div class="comment">
-    <span class="commenter">Marie Dubois :</span>
-    <p class="comment-text">Je suis impatiente de voir comment l'équipe va se développer cette saison. Bonne chance au TFC !</p>
-  </div>
-
-
-</div>
-
-
-
-<script src="js/app.js"></script>
-<footer>
+<footer role="contentinfo" aria-label="Pied de page">
   <div class="container-footer">
     <div class="container-contact">
       <button type="button" class="btn btn-primary" onclick="window.location.href='login-page.html'">
@@ -133,4 +137,5 @@
     </div>
   </div>
 </footer>
+</body>
 </html>
