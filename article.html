@@ -22,7 +22,7 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 <body>
-<header>
+<header aria-label="en tete de la page article">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
@@ -49,12 +49,12 @@
     </div>
   </nav>
 </header>
-<main>
-<article class="container-global">
+<main aria-label="contenu principal">
+<article class="container-global" aria-label="article sur le tfc">
   <h1 id="article-title">Le Toulouse Football Club : Une Équipe en Évolution</h1>
   <p>Le Toulouse Football Club, souvent abrégé en TFC, est un club de football français basé à Toulouse. Fondé en 1970, le club évolue actuellement en Ligue 2, après avoir été relégué de la Ligue 1 à la fin de la saison 2019-2020.</p>
   <p>Malgré ses hauts et ses bas, le TFC reste un club historique du football français, ayant connu des moments de gloire notamment dans les années 2000 sous la direction de l'entraîneur Alain Casanova.</p>
-  <table>
+  <table aria-label="tableau sur l'effectif du tfc">
     <caption>Effectif Actuel du TFC</caption>
     <thead>
     <tr>
@@ -95,7 +95,7 @@
   <p>Aujourd'hui, le TFC s'efforce de reconstruire son équipe et de regagner sa place dans l'élite du football français. Avec un mélange de jeunes talents prometteurs et d'éléments expérimentés, le club toulousain vise à retrouver son lustre d'antan.</p>
   <p>La passion des supporters pour le Toulouse Football Club reste intacte, et l'équipe peut compter sur un soutien fervent à chaque match, que ce soit à domicile au Stadium de Toulouse ou à l'extérieur.</p>
 </article>
-<aside id="comments" class="comments" aria-labelledby="comments-title">
+<aside id="comments" class="comments" aria-labelledby="Les commentaires de l'article">
   <h2 class="h2" id="comments-title">Commentaires</h2>
   <div class="comment">
     <p>
@@ -121,9 +121,6 @@
 <footer role="contentinfo" aria-label="Pied de page">
   <div class="container-footer">
     <div class="container-contact">
-      <button type="button" class="btn btn-primary" onclick="window.location.href='login-page.html'">
-        Se connecter
-      </button>
       <div class="contact">
         <p>Contact</p>
         <div class="infos-contact">

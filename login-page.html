@@ -22,12 +22,12 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 <body>
-<header>
+<header aria-label="barre de navigation">
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="barre de navigation">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
-        <img src="./img/TF_SPORT_LOGO.png" alt="logo du site sport">
+        <img src="./img/TF_SPORT_LOGO.png" alt="retour à la page d'accueil">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -50,9 +50,9 @@
     </div>
   </nav>
 </header>
-<main>
-<div class="container-form">
-  <form action="index.html">
+<main aria-label="contenue de la page">
+<div class="container-form" aria-label="formulaire de connexion">
+  <form action="index.html" method="post">
     <h1>Connexion</h1>
     <div>
       <label for="email">Email :</label>
@@ -60,14 +60,17 @@
     </div>
     <div>
       <label for="password">Mot de passe :</label>
-      <input type="password" id="password" name="password" required autocomplete="current-password">
+      <input type="password" id="password" name="password" required autocomplete="current-password" aria-describedby="passwordHelpBlock">
+      <div id="passwordHelpBlock" class="form-text">
+        Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+      </div>
     </div>
     <input type="submit" value="Se connecter">
   </form>
 </div>
 </main>
 
-<footer>© 2024 Copyright: Tfsport</footer>
+<footer aria-label="Bas de page">© 2024 Copyright: Tfsport</footer>
 </body>
 
 </html>
